@@ -1,492 +1,720 @@
-body{
-    margin: auto;
-    z-index: 1;
+body {
+  margin: auto;
+  z-index: 1;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
 }
 
 #logo-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 .nav {
-    display: flex;
-    gap: 25px;
-    margin-right: 20px;
+  display: flex;
+  gap: 25px;
+  margin-right: 20px;
 }
 
 .nav a {
-    text-decoration: none;
-    color: black;
-    color: white;
-    
+  text-decoration: none;
+  color: black;
+  color: white;
 }
 
 .collections {
-    padding: 60px 5%;
-    text-align: center;
+  padding: 60px 5%;
+  text-align: center;
 }
 
 .collections h2 {
-    font-family: Georgia, serif;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #8B6F47;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #8b6f47;
 }
 
 .collection-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .demo {
-    flex: 1;
-    text-decoration: none;
-    color: #333;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  flex: 1;
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .demo img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
 }
 
 .demo:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .demo h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
 .demo h3 {
-    font-family: Georgia, serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #8B6F47;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #8b6f47;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .demo p {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
-}
-
-@media (max-width: 768px) {
-
-    .collection-container {
-        flex-wrap: wrap;
-    }
-
-    .demo {
-        flex: 1 1 250px;
-    }
-
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
 }
 
 .hero h1 {
-    color: white;
-    font-family: Georgia, serif;
-    font-size: 45px;
-    letter-spacing: 2px;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 45px;
+  letter-spacing: 2px;
 }
 
 .hero h3 {
-    color: #f5d6a0;
-    font-family: Georgia, serif;
-    font-style: italic;
+  color: #f5d6a0;
+  font-family: Georgia, serif;
+  font-style: italic;
 }
 
 .hero p {
-    color: white;
-    max-width: 700px;
-    line-height: 1.8;
+  color: white;
+  max-width: 700px;
+  line-height: 1.8;
 }
 
 .hero {
-    min-height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/Uganda elegant wedding sky-blue decoration.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/Uganda elegant wedding sky-blue decoration.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
 }
 .hero a {
-    display: inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    background-color: #b08d57;
-    color: white;
-    border-radius: 5px;
-    margin: 10px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background-color: #b08d57;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .hero a:hover {
-    background-color: #8b6f47;
+  background-color: #8b6f47;
 }
 
 .about {
-    padding: 70px 5%;
-    text-align: center;
-    background-color: #f9f5ef;
+  padding: 70px 5%;
+  text-align: center;
+  background-color: #f9f5ef;
 }
 
 .about h2 {
-    font-family: Georgia, serif;
-    font-size: 32px;
-    color: #8B6F47;
-    margin-bottom: 40px;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #8b6f47;
+  margin-bottom: 40px;
 }
 
 .about-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .feature {
-    flex: 1;
-    padding: 25px;
-    background-color: white;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .feature:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .feature h3 {
-    color: #8B6F47;
-    font-family: Georgia, serif;
+  color: #8b6f47;
+  font-family: Georgia, serif;
 }
 
 .feature p {
-    color: #666;
-    line-height: 1.6;
+  color: #666;
+  line-height: 1.6;
 }
 
 .contact {
-    padding: 80px 20px;
-    background-color: #8B6F47;
-    text-align: center;
-    color: white;
+  padding: 80px 20px;
+  background-color: #8b6f47;
+  text-align: center;
+  color: white;
 }
 
 .contact-content {
-    max-width: 700px;
-    margin: auto;
+  max-width: 700px;
+  margin: auto;
 }
 
 .contact h2 {
-    font-family: Georgia, serif;
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .contact p {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 .contact-details {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 .contact-btn {
-    display: inline-block;
-    padding: 13px 30px;
-    background-color: white;
-    color: #8B6F47;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
+  display: inline-block;
+  padding: 13px 30px;
+  background-color: white;
+  color: #8b6f47;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .contact-btn:hover {
-    background-color: #f5d6a0;
-    transform: translateY(-3px);
+  background-color: #f5d6a0;
+  transform: translateY(-3px);
 }
 
 .whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 
-    background-color: #25D366;
-    color: white;
+  background-color: #25d366;
+  color: white;
 
-    padding: 15px 22px;
-    border-radius: 50px;
+  padding: 15px 22px;
+  border-radius: 50px;
 
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-    z-index: 1000;
+  z-index: 1000;
 
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .whatsapp-float:hover {
-    background-color: #50ad09;
-    transform: translateY(-5px);
+  background-color: #50ad09;
+  transform: translateY(-5px);
 }
 
 .footer {
-    background-color: #222;
-    color: white;
-    padding: 50px 30px 15px;
+  background-color: #222;
+  color: white;
+  padding: 50px 30px 15px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .footer-container > div {
-    flex: 1;
-    min-width: 200px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer h3 {
-    color: #d4af37;
-    margin-bottom: 15px;
+  color: #d4af37;
+  margin-bottom: 15px;
 }
 
 .footer p {
-    line-height: 1.6;
-    color: #ccc;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 .footer-links a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 10px;
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .footer-links a:hover {
-    color: #d4af37;
+  color: #d4af37;
 }
 
 .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #555;
-    margin-top: 35px;
-    padding-top: 15px;
+  text-align: center;
+  border-top: 1px solid #555;
+  margin-top: 35px;
+  padding-top: 15px;
 }
 
-
 .product-section {
-    min-height: 100vh;
-    padding: 100px 40px 40px;
-    box-sizing: border-box;
+  min-height: 100vh;
+  padding: 100px 40px 40px;
+  box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #cakes {
-    background-color: #f8eeee;
+  background-color: #f8eeee;
 }
 
 #suits {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 #gowns {
-    background-color: #f5e8ef;
+  background-color: #f5e8ef;
 }
 
 #tents {
-    background-color: #eaf0e8;
+  background-color: #eaf0e8;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    width: 100%;
-    max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .product-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .section-description {
-    max-width: 700px;
-    text-align: center;
-    line-height: 1.7;
-    margin: 15px auto 35px;
-    color: #555;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.7;
+  margin: 15px auto 35px;
+  color: #555;
 }
 
 .enquiry-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    text-decoration: none;
-    padding: 12px 18px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 12px;
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
 
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .enquiry-btn:hover {
-    background-color: #128C7E;
-    transform: translateY(-3px);
+  background-color: #128c7e;
+  transform: translateY(-3px);
 }
 
 .product-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card .enquiry-btn {
-    margin-top: auto;
+  margin-top: auto;
 }
 
-
 .product-section > h1 {
-    font-size: 42px;
-    font-family: Georgia, serif;
-    font-weight: bold;
-    color: #8b5e3c;
-    text-align: center;
-    margin-bottom: 10px;
-    position: relative;
-    padding-bottom: 15px;
+  font-size: 42px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #8b5e3c;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 15px;
 }
 
 .product-section > h1::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #d4af37;
-    margin: 12px auto 0;
-    border-radius: 5px;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d4af37;
+  margin: 12px auto 0;
+  border-radius: 5px;
 }
-
 
 /* Initial hidden state */
 .reveal {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 /* Visible state */
 .reveal.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .product-card:nth-child(1) {
-    transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .product-card:nth-child(2) {
-    transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .product-card:nth-child(3) {
-    transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 .product-card:nth-child(4) {
-    transition-delay: 0.55s;
+  transition-delay: 0.55s;
 }
 .product-card:nth-child(5) {
-    transition-delay: 0.7s;
+  transition-delay: 0.7s;
 }
 .product-card:nth-child(6) {
-    transition-delay: 0.85s;
+  transition-delay: 0.85s;
 }
 
-
 .product-card {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .product-card img {
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .product-card:hover img {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 
-
 @media (prefers-reduced-motion: reduce) {
-    .reveal,
-    .product-card,
-    .product-card img {
-        transition: none;
-        transform: none;
-    }
+  .reveal,
+  .product-card,
+  .product-card img {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+/* TABLETS */
+@media screen and (max-width: 768px) {
+  /* Header */
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  #logo {
+    margin-left: 0;
+  }
+
+  .nav {
+    margin-right: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 75vh;
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  /* Collections */
+  .collection-container {
+    flex-wrap: wrap;
+  }
+
+  .demo {
+    flex: 1 1 250px;
+  }
+
+  /* About */
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    flex: 1 1 250px;
+  }
+
+  /* Contact */
+  .contact-content {
+    width: 100%;
+  }
+
+  /* Products */
+  .product-section {
+    min-height: auto;
+    padding: 90px 20px 40px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  /* Footer */
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-container > div {
+    text-align: center;
+  }
+
+  /* WhatsApp */
+  .whatsapp-float {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 16px;
+  }
+}
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
+  /* Header */
+  header {
+    padding: 10px;
+  }
+
+  #logo {
+    font-size: 18px;
+  }
+
+  #logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Mobile navigation */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+  }
+
+  .nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #444;
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 70vh;
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .hero h3 {
+    font-size: 17px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Collections */
+  .collections {
+    padding: 40px 15px;
+  }
+
+  .collections h2,
+  .about h2,
+  .contact h2 {
+    font-size: 26px;
+  }
+
+  .collection-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .demo {
+    width: 100%;
+    flex: none;
+  }
+
+  .demo img {
+    height: 210px;
+  }
+
+  /* About */
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+    flex: none;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 45px 15px;
+  }
+
+  /* Products */
+  .product-section {
+    padding: 85px 12px 40px;
+  }
+
+  .product-section > h1 {
+    font-size: 27px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 230px;
+  }
+
+  .enquiry-btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 35px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container > div {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* WhatsApp */
+  .whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 13px;
+    font-size: 13px;
+  }
 }
