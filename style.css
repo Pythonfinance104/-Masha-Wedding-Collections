@@ -718,3 +718,17 @@ header {
     font-size: 13px;
   }
 }
+
+
+/* Developer information in header */
+.developer-info {
+    font-size: 17px;
+    color: #d4af37;
+    margin-top: 4px;
+}
+
+/* Developer information in footer */
+.footer-bottom p {
+    font-size: 13px;
+    margin: 5px 0;
+}
